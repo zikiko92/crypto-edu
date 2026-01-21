@@ -1,0 +1,123 @@
+/* إعدادات عامة */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+/* رأس الموقع */
+header {
+  background: rgba(2, 6, 23, 0.95);
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #1e293b;
+}
+
+header h1 {
+  margin: 0;
+  color: #38bdf8;
+  font-size: 2rem;
+}
+
+/* القائمة */
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #e5e7eb;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* المحتوى */
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* البطاقات */
+.card {
+  background: rgba(30, 41, 59, 0.9);
+  border-radius: 14px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #38bdf8;
+}
+
+/* شريط البحث */
+#searchInput {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #334155;
+  background: #020617;
+  color: #e5e7eb;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+/* القوائم */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* الصور */
+img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+/* أزرار */
+.btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #020617;
+  padding: 12px 22px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* الفوتر */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #94a3b8;
+  border-top: 1px solid #1e293b;
+  margin-top: 50px;
+}
