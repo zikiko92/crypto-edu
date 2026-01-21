@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>مصطلحات الكريبتو</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>مصطلحات الكريبتو 📘</h1>
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="glossary.html">المصطلحات</a>
+    <a href="education.html">التعليم</a>
+    <a href="platforms.html">منصات التداول</a>
+  </nav>
+</header>
+
+<main>
+
+  <input type="text" id="searchInput" placeholder="ابحث عن مصطلح...">
+
+  <section class="card">
+    <h2>Blockchain</h2>
+    <p>البلوكشين هو سجل رقمي موزع لتخزين المعاملات بشكل آمن وشفاف.</p>
+  </section>
+
+  <section class="card">
+    <h2>Bitcoin</h2>
+    <p>أول عملة رقمية لامركزية تم إنشاؤها سنة 2009.</p>
+  </section>
+
+  <section class="card">
+    <h2>Altcoin</h2>
+    <p>أي عملة رقمية غير البيتكوين.</p>
+  </section>
+
+  <section class="card">
+    <h2>Wallet</h2>
+    <p>محفظة رقمية لتخزين العملات الرقمية وإرسالها واستقبالها.</p>
+  </section>
+
+  <section class="card">
+    <h2>Exchange</h2>
+    <p>منصة لتبادل وشراء وبيع العملات الرقمية.</p>
+  </section>
+
+</main>
+
+<script>
+  const searchInput = document.getElementById('searchInput');
+  searchInput.addEventListener('keyup', function() {
+    const filter = searchInput.value.toLowerCase();
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+      const term = card.querySelector('h2').textContent.toLowerCase();
+      card.style.display = term.includes(filter) ? '' : 'none';
+    });
+  });
+</script>
+
+</body>
+</html>
